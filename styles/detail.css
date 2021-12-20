@@ -63,19 +63,6 @@
   align-items: center;
 }
 
-/* cover */
-.jumbotron {
-  background-image: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0.3),
-      rgba(0, 0, 0, 0.3)
-    ),
-    url("../images/jepp_home.jpeg");
-
-  background-size: cover;
-  background-position: center;
-}
-
 /* Font */
 .f-playfair {
   font-family: Playfair Display;
@@ -142,161 +129,23 @@
   color: red !important;
 }
 
-/* input type */
-.input-type {
-  width: 470px;
-  height: 52px;
-  background: rgba(255, 255, 255, 0.5);
-  padding: 20px;
-  border-radius: 6px;
-  border: 0.8px solid #afb0b9;
-  color: red;
-}
-
-/*support google chrome*/
-
-.input-type::-webkit-input-placeholder {
-  color: rgba(74, 76, 83, 1);
-}
-
-/*support mozilla*/
-.input-type:-moz-input-placeholder {
-  color: rgba(74, 76, 83, 1);
-}
-
-/*support internet explorer*/
-.input-type:-ms-input-placeholder {
-  color: rgba(74, 76, 83, 1);
-}
-
-/* input select */
-.input-select {
-  width: 220px;
-  height: 52px;
-  background: rgba(255, 255, 255, 0.5);
-  padding: 20px;
-  border-radius: 6px;
-  border: 0.8px solid #afb0b9;
-  color: rgba(74, 76, 83, 1);
-}
-
-/* name city */
-.card-city {
-  background-color: white;
-  position: absolute;
-  bottom: -40px;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
-  border-radius: 6px;
-}
-
-/* dimension card */
-.dimensi {
-  width: 250px;
-  height: 300px;
-}
-
-.img-size {
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  position: relative;
-  background-position: center;
-}
-
-.btn-search {
-  width: 180px;
-  height: 52.01px;
-  background: #ffcd61;
-  border-radius: 8px;
-  border: none;
-}
-
-.img-cs {
-  width: 400px;
-  height: 500px;
-  background: url("../images/comment_users.png");
-  background-size: cover;
-  background-position: center;
-  border-radius: 14px;
-}
-
-.bg-footer {
-  background: #f9f9fb !important;
-}
-
-/* circle pf-testimonial */
-.circle2 {
-  width: 42px;
-  height: 42.01px;
-  border: 6px solid rgba(191, 240, 221, 1);
-  border-radius: 50%;
-}
-
-.position-circle {
-  position: absolute;
-  top: -15px;
-  right: -15px;
-  z-index: -1;
-}
-
-/* plus pf testimonial */
-.plus {
-  width: 42px;
-  height: 42.01px;
-  position: absolute;
+.f-detail {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 24px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  bottom: -20px;
-  left: -20px;
+  padding-top: 12px;
 }
 
-.vertikal {
-  width: 10px;
-  height: 100%;
-  background-color: rgba(253, 208, 141, 1);
-  position: absolute;
+.link-back a {
+  color: rgba(0, 0, 0, 1);
+  text-decoration: none;
 }
 
-.horizontal {
-  position: absolute;
-  width: 100%;
-  height: 10px;
-  background-color: rgba(253, 208, 141, 1);
-  position: absolute;
-}
-
-/* rectangle */
-.rectangle {
-  width: 132px;
-  height: 60px;
-  background: #ffffff;
-  border-radius: 16px 0px 0px 0px;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  padding: 20px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.left {
-  width: 40px;
-  height: 40px;
-  border: 2px solid #d7d7d7;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.right {
-  width: 40px;
-  height: 40px;
-  border: 2px solid #000000;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.img-detail {
+  width: 610px;
+  height: 409px;
+  border-radius: 10px;
 }
