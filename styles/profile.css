@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish&family=Nunito&family=Playfair+Display:wght@700&display=swap");
 
 /* Circle custom*/
-.container-circle {
+.gender-circle {
   background-color: #ffcd61;
   width: 30px;
   height: 30px;
@@ -10,7 +10,7 @@
   position: relative;
 }
 
-.container-circle .circle {
+.gender-circle .circle {
   width: 30px;
   height: 30px;
   border: 10px solid #393939;
@@ -47,10 +47,16 @@
   font-size: 15px;
 }
 
-.img-profile {
+.img-profile-icon {
   position: absolute;
   width: 55.62px;
   height: 60.15px;
+  border-radius: 50%;
+}
+
+.img-profile {
+  width: 327.69px;
+  height: 350.92px;
   border-radius: 50%;
 }
 
@@ -63,21 +69,9 @@
   align-items: center;
 }
 
-/* cover */
-.jumbotron {
-  background-image: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0.3),
-      rgba(0, 0, 0, 0.3)
-    ),
-    url("../images/jepp_home.jpeg");
-
-  background-size: cover;
-  background-position: center;
-}
-
 /* Font */
-.f-playfair {
+.f-playfair,
+.f-playfair-main {
   font-family: Playfair Display;
   font-style: normal;
   font-weight: bold;
@@ -87,21 +81,23 @@
 }
 
 .f-playfair-main {
-  font-family: Playfair Display;
-  font-style: normal;
-  font-weight: bold;
   font-size: 36px;
   line-height: 50px;
   color: #000000;
 }
 
-.f-nunito {
+.f-nunito,
+.f-judul,
+.f-save {
   font-family: Nunito;
   font-style: normal;
   font-weight: 600;
-  font-size: 22px;
   line-height: 30px;
   color: #202336;
+}
+
+.f-judul {
+  font-size: 36px;
 }
 
 .f-mulish {
@@ -111,13 +107,61 @@
   color: #393939;
 }
 
-.f-mulish-coment {
-  font-family: Mulish;
-  font-style: normal;
-  font-weight: normal;
+.f-save-cansel {
   font-size: 24px;
-  line-height: 36px;
   color: #393939;
+}
+
+.f-name {
+  font-family: Playfair;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 24px;
+  position: relative;
+}
+
+.f-status {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 24px;
+  color: rgba(184, 190, 205, 1);
+}
+
+.f-edit {
+  width: 166px;
+  height: 33px;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 33px;
+}
+
+.f-form,
+.f-form-title,
+.f-form-label,
+.f-form-input {
+  font-family: Nunito;
+  font-style: normal;
+  font-size: 20px;
+}
+
+.f-form-title {
+  font-weight: 900;
+  line-height: 33px;
+}
+
+.f-form-label {
+  color: rgba(159, 159, 159, 1);
+  font-weight: normal;
+  line-height: 33px;
+}
+
+.f-form-input {
+  line-height: 50px;
 }
 
 /* Line Custom */
@@ -130,7 +174,132 @@
 /* link */
 .link a {
   text-decoration: none;
-  color: #848484;
+  color: rgba(57, 57, 57, 1);
+}
+
+.bg-footer {
+  background: #f9f9fb !important;
+}
+
+.btn,
+.btn-save,
+.btn-cansel {
+  width: 231px;
+  height: 70px;
+  box-shadow: 0px 0px 20px rgba(248, 161, 112, 0.4);
+  border-radius: 10px;
+}
+
+.btn-save {
+  background: #ffcd61;
+  font-weight: 900;
+}
+
+.btn-cansel {
+  background: rgba(203, 203, 212, 0.27);
+  font-weight: 900;
+}
+
+.btn-edit,
+.btn-edit-photo,
+.btn-edit-password {
+  width: 383px;
+  height: 89px;
+  border-radius: 10px;
+}
+
+.btn-edit-photo {
+  background: #ffcd61;
+}
+
+.btn-edit-photo a {
+  color: rgba(57, 57, 57, 1);
+}
+
+.btn-edit-password {
+  background: #393939;
+}
+
+.btn-edit-password a {
+  color: rgba(255, 205, 97, 1);
+}
+
+/* radio */
+.gender {
+  display: inline;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default gender button */
+.gender input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom gender button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.gender:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the gender button is checked, add a blue background */
+.gender input:checked ~ .checkmark {
+  background-color: rgba(255, 205, 97, 1);
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.gender input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.gender .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+}
+
+.form-input {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  width: 80%;
+}
+
+.btn-submit {
+  display: inline-block;
+  width: 100%;
+  height: 89px;
+  background: #393939;
+  border-radius: 10px;
+  color: rgba(255, 205, 97, 1);
 }
 
 /* colors icon*/
@@ -140,163 +309,4 @@
 
 .red {
   color: red !important;
-}
-
-/* input type */
-.input-type {
-  width: 470px;
-  height: 52px;
-  background: rgba(255, 255, 255, 0.5);
-  padding: 20px;
-  border-radius: 6px;
-  border: 0.8px solid #afb0b9;
-  color: red;
-}
-
-/*support google chrome*/
-
-.input-type::-webkit-input-placeholder {
-  color: rgba(74, 76, 83, 1);
-}
-
-/*support mozilla*/
-.input-type:-moz-input-placeholder {
-  color: rgba(74, 76, 83, 1);
-}
-
-/*support internet explorer*/
-.input-type:-ms-input-placeholder {
-  color: rgba(74, 76, 83, 1);
-}
-
-/* input select */
-.input-select {
-  width: 220px;
-  height: 52px;
-  background: rgba(255, 255, 255, 0.5);
-  padding: 20px;
-  border-radius: 6px;
-  border: 0.8px solid #afb0b9;
-  color: rgba(74, 76, 83, 1);
-}
-
-/* name city */
-.card-city {
-  background-color: white;
-  position: absolute;
-  bottom: -40px;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
-  border-radius: 6px;
-}
-
-/* dimension card */
-.dimensi {
-  width: 250px;
-  height: 300px;
-}
-
-.img-size {
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  position: relative;
-  background-position: center;
-}
-
-.btn-search {
-  width: 180px;
-  height: 52.01px;
-  background: #ffcd61;
-  border-radius: 8px;
-  border: none;
-}
-
-.img-cs {
-  width: 400px;
-  height: 500px;
-  background: url("../images/comment_users.png");
-  background-size: cover;
-  background-position: center;
-  border-radius: 14px;
-}
-
-.bg-footer {
-  background: #f9f9fb !important;
-}
-
-/* circle pf-testimonial */
-.circle2 {
-  width: 42px;
-  height: 42.01px;
-  border: 6px solid rgba(191, 240, 221, 1);
-  border-radius: 50%;
-}
-
-.position-circle {
-  position: absolute;
-  top: -15px;
-  right: -15px;
-  z-index: -1;
-}
-
-/* plus pf testimonial */
-.plus {
-  width: 42px;
-  height: 42.01px;
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  bottom: -20px;
-  left: -20px;
-}
-
-.vertikal {
-  width: 10px;
-  height: 100%;
-  background-color: rgba(253, 208, 141, 1);
-  position: absolute;
-}
-
-.horizontal {
-  position: absolute;
-  width: 100%;
-  height: 10px;
-  background-color: rgba(253, 208, 141, 1);
-  position: absolute;
-}
-
-/* rectangle */
-.rectangle {
-  width: 132px;
-  height: 60px;
-  background: #ffffff;
-  border-radius: 16px 0px 0px 0px;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  padding: 20px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.left {
-  width: 40px;
-  height: 40px;
-  border: 2px solid #d7d7d7;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.right {
-  width: 40px;
-  height: 40px;
-  border: 2px solid #000000;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }

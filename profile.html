@@ -51,7 +51,7 @@
           <!-- profile dropdown -->
           <li>
             <div class="dropdown profile">
-              <img class="img-profile rounded-circle dropdown-toggle" src="images/user_profile.png"
+              <img class="img-profile-icon rounded-circle dropdown-toggle" src="images/user_profile.png"
                 id="dropdownMenuLink" data-bs-toggle="dropdown">
 
               <ul class="dropdown-menu " aria-labelledby="dropdownMenuLink">
@@ -79,7 +79,102 @@
       </div>
     </div>
 
+    <!-- main -->
+    <div class="container">
 
+      <!-- row 1 -->
+      <div class="row mb-5">
+        <div class="col-lg-6 d-flex flex-row align-items-center mb-5">
+          <h3 class="f-judul ms-3">Update Profile</h3>
+        </div>
+
+        <div class="col-lg-6 d-flex flex-row justify-content-between mb-5">
+          <div class="btn-save d-flex justify-content-center align-items-center link f-save-cansel">
+            <a href="#">Save Changes</a>
+          </div>
+          <div class="btn-cansel d-flex justify-content-center align-items-center link f-save-cansel">
+            <a href="#">Cancel</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- row 2 -->
+      <div class="row mb-5">
+        <div class="col-lg-4 d-flex flex-row justify-content-center align-items-center">
+          <img src="images/user_profile.png" class="img-profile ">
+        </div>
+
+        <div class="col-lg-4 p-4 text-center ms-4">
+          <h1 class="f-name mb-4">Samantha Doe</h1>
+          <p class="f-status mb-5">samanthadoe@mail.com +62833467823 <br> Has been active since 2013</p>
+
+          <div class="radio d-flex flex-row justify-content-between">
+            <label class="gender">Male
+              <input type="radio" checked="checked" name="radio">
+              <span class="checkmark"></span>
+            </label>
+            <label class="gender">Female
+              <input type="radio" name="radio">
+              <span class="checkmark"></span>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <!-- row 3 -->
+      <div class="row">
+        <div class="col-lg-6 d-flex flex-row justify-content-end mb-5">
+          <div class="btn-edit-photo d-flex justify-content-center align-items-center link f-edit">
+            <a href="#">Edit photo</a>
+          </div>
+        </div>
+        <div class="col-lg-6 d-flex flex-row  mb-5">
+          <div class="btn-edit-password d-flex justify-content-center align-items-center ms-5 link f-edit">
+            <a href="#">Edit Password</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- row 4 -->
+      <div class="row d-flex flex-row ps-5">
+        <p class="f-form-title">Contacts</p>
+
+        <!-- email -->
+        <div class="col-lg-6 mb-5 d-flex flex-column">
+          <label for="email" class="f-form-label mb-3">Email address :</label>
+          <input type="email" id="email" class="form-input f-form-input">
+        </div>
+
+        <!-- address -->
+        <div class="col-lg-6 mb-5 d-flex flex-column ">
+          <label for="address" class="f-form-label mb-3">Address :</label>
+          <input type="text" id="address" class="form-input f-form-input">
+        </div>
+
+        <p class="f-form-title">Identity</p>
+
+        <!-- display name -->
+        <div class="col-lg-6 d-flex flex-column mb-5">
+          <label for="name" class="f-form-label mb-3">Display name :</label>
+          <input type="text" id="name" class="form-input f-form-input">
+        </div>
+
+        <!-- date -->
+        <div class="col-lg-6 d-flex flex-column mb-5">
+          <label for="date" class="f-form-label mb-3">DD/MM/YY :</label>
+          <input type="date" id="date" class="form-input f-form-input">
+        </div>
+
+      </div>
+
+      <!-- row 5 -->
+      <div class="row mb-5 p-5">
+        <div class="col-lg-12 justify-content-center d-flex">
+          <button type="submit" name="save" class="btn-submit f-save-cansel mt-3">Save</button>
+        </div>
+      </div>
+
+    </div>
 
     <!-- Footer -->
     <div class="row p-4 justify-content-md-center f-mulish mt-5 bg-footer">
