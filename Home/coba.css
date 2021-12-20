@@ -1,0 +1,57 @@
+/* costum circle */
+
+.container-circle {
+  background-color: #ffcd61;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  /* display: flex; */
+  /* justify-content: center; */
+  margin: 10px 0px;
+  position: relative;
+}
+
+.circle {
+  width: 30px;
+  height: 30px;
+  border: 10px solid #393939;
+  border-radius: 50%;
+  position: absolute;
+  /* background-color: black; */
+}
+
+/* footer */
+
+/* text */
+.text p {
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 19px;
+  line-height: 28px;
+  color: #848484;
+}
+
+.font-custom {
+  font-family: Mulish;
+  font-style: normal;
+  /* font-weight: bold; */
+  font-size: 19px;
+  /* line-height: 60px; */
+  color: #393939;
+}
+
+.item {
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 15px;
+  color: #848484;
+}
+
+.line {
+  width: 80%;
+  height: 3px;
+  background-color: #c4c4c4;
+}
