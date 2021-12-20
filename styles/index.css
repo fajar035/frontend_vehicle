@@ -41,7 +41,7 @@
       rgba(0, 0, 0, 0.3),
       rgba(0, 0, 0, 0.3)
     ),
-    url("../img/cover_home.jpeg");
+    url("../images/cover_home.jpeg");
 
   background-size: cover;
   background-position: center;
@@ -159,9 +159,9 @@
 }
 
 .img-cs {
-  width: 500px;
-  height: 598px;
-  background: url(../img/comment_users.png);
+  width: 400px;
+  height: 500px;
+  background: url("../images/comment_users.png");
   background-size: cover;
   background-position: center;
   border-radius: 14px;
@@ -184,48 +184,4 @@
   top: -15px;
   right: -15px;
   z-index: -1;
-}
-
-.body {
-  margin: 0;
-  padding: 0;
-  background: #2c2c54;
-  height: 100%;
-  width: 100%;
-}
-
-#wrapper {
-  position: absolute;
-  width: 100%;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-#vertical {
-  display: none;
-}
-
-#vertical:checked + label > .vBar {
-  transform: rotate(90deg);
-}
-
-.vBar,
-.hBar {
-  cursor: pointer;
-  margin: 0 auto;
-  background: #ffda79;
-  pointer-events: none;
-}
-
-.vBar {
-  box-shadow: 5px 1px 25px rgba(0, 0, 0, 0.3);
-  width: 10px;
-  height: 100px;
-  transition: all 0.6s cubic-bezier(0.87, -0.41, 0.19, 1.44);
-}
-
-.hBar {
-  width: 100px;
-  height: 10px;
-  transform: translateY(-55px);
 }
