@@ -203,6 +203,14 @@
   background-position: center;
 }
 
+.btn-search {
+  width: 180px;
+  height: 52.01px;
+  background: #ffcd61;
+  border-radius: 8px;
+  border: none;
+}
+
 .img-cs {
   width: 400px;
   height: 500px;
