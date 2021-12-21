@@ -101,26 +101,24 @@
           <img src="images/sepeda_detail.jpeg" class="img-detail image-fluid">
         </div>
 
-        <div class="col-lg-6 mt-5 ">
-          <div class="detail ">
-            <div class="title mb-5">
-              <h1>Fixie - Gray Only</h1>
-              <p>Yogyakarta</p>
-            </div>
+        <div class="col-lg-6 mt-5 ps-5">
+          <div class="detail mb-5">
+            <h1 class="f-tittle mb-4">Fixie - Gray Only</h1>
+            <p class="f-subtittle">Yogyakarta</p>
           </div>
 
-          <div class="available">
-            <p>Available</p>
-            <p>No Prepayment</p>
+          <div class="available mb-5">
+            <p class="f-available">Available</p>
+            <p class="f-payment">No Prepayment</p>
           </div>
 
-          <div class="booking mb-5">
+          <div class="f-booking mb-5">
             <p>Capacity : 1 Person</p>
             <p>Type : Bike</p>
             <p>Reservation : 2 PM</p>
           </div>
 
-          <div class="harga d-flex justify-content-end align-self-end">
+          <div class="f-price d-flex justify-content-center align-self-end">
             <p>Rp.79.000/day</p>
           </div>
         </div>
@@ -131,42 +129,46 @@
         <!-- kolom kiri -->
         <div class="col-lg-6 mt-5 d-flex flex-row">
 
-          <div class="col-6 d-flex flex-row bg-primary">
+          <div class="col-6 d-flex flex-row ">
 
-            <div class="left col-3 border">
-              panah left
+            <div class="left col-3 d-flex justify-content-center align-self-center">
+              <i class="fas fa-angle-left fa-3x"></i>
             </div>
 
-            <div class="thumb col-9 border">
-              foto 1
+            <div class="col-9 position-relative">
+              <img src="images/sepeda_detail.jpeg" class="img-thumb">
             </div>
           </div>
 
-          <div class="col-6 d-flex flex-row bg-primary">
+          <div class="col-6 d-flex flex-row">
 
-            <div class="left col-9 border">
-              foto 1
+            <div class="col-9 position-relative">
+              <img src="images/sepeda_detail.jpeg" class="img-thumb">
             </div>
 
-            <div class="thumb col-3 border">
-              panah right
+            <div class="col-3 d-flex justify-content-center align-self-center">
+              <i class="fas fa-angle-right fa-3x"></i>
             </div>
           </div>
 
         </div>
 
         <!-- kolom kanan -->
-        <div class="col-lg-6 border mt-5 d-flex flex-row">
-          <div class="col-2 bg-primary">
-            minus
+        <div class="col-lg-6 mt-5 d-flex flex-row">
+          <div class="col-3 d-flex justify-content-end align-self-center">
+            <div class="box-minus d-flex justify-content-center align-items-center">
+              <i class="fas fa-minus fa-3x"></i>
+            </div>
           </div>
 
-          <div class="col-8 bg-danger">
-            angka
+          <div class="col-6 d-flex justify-content-center align-self-center">
+            <p class="f-number">2</p>
           </div>
 
-          <div class="col-2 bg-warning">
-            plus
+          <div class="col-3 d-flex justify-content-start align-self-center">
+            <div class="box-plus d-flex justify-content-center align-items-center">
+              <i class="fas fa-plus fa-3x"></i>
+            </div>
           </div>
         </div>
 
@@ -174,16 +176,25 @@
 
       <!-- row 3 -->
       <div class="row">
-        <div class="col-lg-5 mt-5 bg-warning">
-          chat admin
+        <div class="col-lg-5 mt-5 d-flex justify-content-end">
+          <div class="btn-chat-admin d-flex justify-content-center align-items-center">
+            <a href="#" class="f-chat-admin">Chat Admin</a>
+          </div>
         </div>
 
-        <div class="col-lg-5 bg-danger mt-5">
-          Reservation
+        <div class="col-lg-5 mt-5 d-flex justify-content-center">
+          <div class="btn-reservation d-flex justify-content-center align-items-center">
+            <a href="#" class="f-reservation">Reservation</a>
+          </div>
         </div>
 
-        <div class="col-lg-2 bg-primary mt-5">
-          <i class="fas fa-heart"></i>like
+        <div class="col-lg-2 mt-5">
+          <div class="btn-like d-flex justify-content-center align-items-center">
+            <a href="#" class="f-like">
+              <i class="fas fa-heart me-1"></i>
+              like
+            </a>
+          </div>
         </div>
       </div>
 

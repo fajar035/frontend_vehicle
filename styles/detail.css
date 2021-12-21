@@ -149,3 +149,144 @@
   height: 409px;
   border-radius: 10px;
 }
+
+.img-thumb {
+  width: 233px;
+  height: 158px;
+  border-radius: 10px;
+}
+
+.box,
+.box-minus,
+.box-plus {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+}
+
+.box-plus {
+  background: #ffcd61;
+}
+
+.box-minus {
+  background: rgba(203, 203, 212, 0.2);
+}
+
+.f-number {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 25px;
+  display: flex;
+  color: #000000;
+}
+
+.btn-chat-admin {
+  width: 443px;
+  height: 89px;
+  background: #393939;
+  border-radius: 10px;
+}
+
+.btn-reservation {
+  width: 421px;
+  height: 89px;
+  background: #ffcd61;
+  box-shadow: 0px 0px 20px rgba(251, 143, 29, 0.4);
+  border-radius: 10px;
+}
+
+.btn-like {
+  width: 170px;
+  height: 89px;
+  background: #393939;
+  border-radius: 10px;
+}
+
+.f-chat-admin {
+  text-decoration: none;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 25px;
+  color: #ffcd61;
+}
+
+.f-reservation {
+  text-decoration: none;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 25px;
+  color: #000000;
+}
+
+.f-like {
+  text-decoration: none;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 24px;
+  color: #ffcd61;
+}
+
+.bg-footer {
+  background: #f9f9fb !important;
+}
+
+.f-tittle {
+  font-family: Playfair;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 25px;
+  color: #042521;
+}
+
+.f-subtittle {
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 24px;
+  color: #042521;
+}
+
+.f-available {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 25px;
+  color: #087e0d;
+}
+
+.f-payment {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 24px;
+  color: #9b0a0a;
+}
+
+.f-booking {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 24px;
+  color: #393939;
+}
+
+.f-price {
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 25px;
+  color: #000000;
+}
