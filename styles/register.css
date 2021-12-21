@@ -4,7 +4,7 @@
 body {
   margin: 0%;
   padding: 0%;
-  background-color: grey;
+  background: url("../images/subtle_white_feathers.png");
 }
 
 /* container */
