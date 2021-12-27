@@ -1,23 +1,103 @@
-@import url("https://fonts.googleapis.com/css2?family=Mulish&family=Nunito&family=Playfair+Display:wght@700&display=swap");
-
 /* Circle custom*/
 .container-circle {
-  background-color: #ffcd61;
-  width: 30px;
-  height: 30px;
+  background-color: #ffffff;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
-  margin: 10px 20px;
   position: relative;
+  display: flex;
+  align-self: center;
 }
 
-.container-circle .circle {
-  width: 30px;
-  height: 30px;
-  border: 10px solid #393939;
+.container-circle .circle1 {
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
+  /* align-self: center; */
+  border: 8px solid black;
+  /* margin: auto; */
   position: absolute;
 }
 
+.container-circle .circle2 {
+  background-color: #ffcd61;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  /* position: absolute; */
+  margin: auto;
+}
+
+/* hover navbar */
+.color-navbar:hover {
+  color: #ffcd61 !important;
+}
+
+.btn-login, .btn-signup {
+  height: 40px;
+  width: 130px;
+  border: 1px solid black;
+  text-align: center;
+  margin: 0px 20px;
+  border-radius: 10px;
+}
+
+.btn-signup {
+  background-color: #FFCD61;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  /* line-height: 60px; */
+  color: #393939;
+}
+
+/* Font */
+.f-playfair {
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 80px;
+  color: #202336;
+}
+
+.f-playfair-main {
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 50px;
+  color: #000000;
+}
+
+.f-nunito {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 30px;
+  color: #202336;
+}
+
+.f-mulish {
+  font-family: Mulish;
+  font-style: normal;
+  font-size: 19px;
+  color: #393939;
+}
+
+.f-mulish-coment {
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 36px;
+  color: #393939;
+}
+
+
+/* 
 /* button size register & login*/
 .btn-custom {
   width: 133px !important;
@@ -38,8 +118,9 @@
       rgba(0, 0, 0, 0.3),
       rgba(0, 0, 0, 0.3)
     ),
-    url("../images/cover_home.jpeg");
-
+    url("../assets/images/cover_home.webp");
+    /*width: 100%;
+    height: 100%;*/
   background-size: cover;
   background-position: center;
 }
@@ -119,6 +200,15 @@
   border: 0.8px solid #afb0b9;
 }
 
+.input-date {
+  width: 100%;
+  height: 52px;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 20px;
+  border-radius: 6px;
+  border: 0.8px solid #afb0b9;
+}
+
 .input-select {
   width: 220px;
   height: 52px;
@@ -143,6 +233,10 @@
   height: 300px;
 }
 
+.color-subtitle {
+  color: #918f8f;
+}
+
 .img-size {
   width: 100%;
   height: 100%;
@@ -154,7 +248,7 @@
 .img-cs {
   width: 400px;
   height: 500px;
-  background: url("../images/comment_users.png");
+  background: url("../assets/images/comment_users.webp");
   background-size: cover;
   background-position: center;
   border-radius: 14px;
@@ -165,7 +259,7 @@
 }
 
 /* circle pf-testimonial */
-.circle2 {
+.circle-testimonial {
   width: 42px;
   height: 42.01px;
   border: 6px solid rgba(191, 240, 221, 1);
@@ -239,4 +333,4 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
